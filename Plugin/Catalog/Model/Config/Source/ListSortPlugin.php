@@ -13,12 +13,12 @@ use Magento\Catalog\Model\Config\Source\ListSort as Subject;
 class ListSortPlugin
 {
     /**
-    * Retrieve option values array
-    *
-    * @param Subject $subject
-    * @param [] $options
-    * @return []
-    */
+     * Retrieve option values array
+     *
+     * @param Subject $subject
+     * @param mixed[] $options
+     * @return mixed[]
+     */
     public function afterToOptionArray(Subject $subject, $options)
     {
         $options[] = ['label' => __('Reviews'), 'value' => 'review'];

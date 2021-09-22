@@ -13,12 +13,12 @@ use Magento\Catalog\Model\Config as Subject;
 class ConfigPlugin
 {
     /**
-    * Retrieve attributes used for sort by as array
-    *
-    * @param Subject $subject
-    * @param [] $options
-    * @return []
-    */
+     * Retrieve attributes used for sort by as array
+     *
+     * @param Subject $subject
+     * @param mixed[] $options
+     * @return mixed[]
+     */
     public function afterGetAttributeUsedForSortByArray(Subject $subject, $options)
     {
         $options['review'] = __('Reviews');
